@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🃏 Дурак: «Цивилизованный»</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="themeToggle" title="Сменить тему"><span id="themeIcon">☀️</span> <span id="themeLabel">Светлая</span></button>
+
+  <div class="bg-decoration"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="suits">♠ ♥ ♦ ♣</div>
+      <h1><img src="logo.jpeg" alt="Дурак logo" class="header-logo" /> Дурак</h1>
+      <p class="subtitle">«Цивилизованный»</p>
+      <p class="tagline">Финальный свод правил, исключающий споры и хаос —<br>превращая игру в тактическую дисциплину.</p>
+    </div>
+  </header>
+
+  <nav id="toc">
+    <div class="toc-inner">
+      <span class="toc-label">Содержание:</span>
+      <a href="#s1">1. Общие положения</a>
+      <a href="#s2">2. Подготовка</a>
+      <a href="#s3">3. Роли</a>
+      <a href="#s4">4. Очерёдность</a>
+      <a href="#s5">5. Ограничение атаки</a>
+      <a href="#s6">6. Защита и Перевод</a>
+      <a href="#s7">7. «В придачу»</a>
+      <a href="#s8">8. Завершение</a>
+      <a href="#s9">9. Финал</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- 1 -->
+    <section id="s1" class="card-section">
+      <h2><span class="section-num">1</span> Общие положения</h2>
+      <table>
+        <thead><tr><th>Параметр</th><th>Значение</th></tr></thead>
+        <tbody>
+          <tr><td>Колода</td><td>36 карт (от 6 до Туза)</td></tr>
+          <tr><td>Участники</td><td>от 2 до 6 человек</td></tr>
+          <tr><td>Цель</td><td>Первым избавиться от всех карт на руках</td></tr>
+          <tr><td>Проигравший</td><td>Последний игрок с картами («Дурак»)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 2 -->
+    <section id="s2" class="card-section">
+      <h2><span class="section-num">2</span> Подготовка и первый ход</h2>
+      <ul>
+        <li>Каждому раздаётся по <strong>6 карт</strong>.</li>
+        <li>Открывается <strong>козырь</strong> — масть, бьющая любую другую.</li>
+        <li><strong>Первый ход</strong> принадлежит обладателю самого младшего козыря.</li>
+        <li><strong>Лимит первого хода:</strong> в первый раунд защищающемуся можно подкинуть не более <strong>5 карт</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- 3 -->
+    <section id="s3" class="card-section">
+      <h2><span class="section-num">3</span> Роли в раунде</h2>
+      <p class="hint">Роли строго распределяются по кругу (по часовой стрелке):</p>
+      <div class="diagram">
+        <div class="diagram-ring">
+          <div class="player-node attacker">Атакующий<br><span>A</span></div>
+          <div class="arrow arrow-right">→</div>
+          <div class="player-node defender">Защищающийся<br><span>З</span></div>
+          <div class="arrow arrow-left">←</div>
+          <div class="player-node thrower">Подбрасывающие<br><span>B, C…</span></div>
+        </div>
+      </div>
+      <table>
+        <thead><tr><th>Роль</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Атакующий</strong></td><td>Начинает ход</td></tr>
+          <tr><td><strong>Защищающийся</strong></td><td>Обязан отбиться или забрать</td></tr>
+          <tr><td><strong>Подбрасывающие</strong></td><td>Все остальные игроки по очереди</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 4 -->
+    <section id="s4" class="card-section">
+      <h2><span class="section-num">4</span> Правила «Цивилизованной» очереди</h2>
+      <div class="callout warning">Подкидывать карты одновременно <strong>запрещено</strong>. Действует строгий регламент.</div>
+
+      <h3>Очерёдность подкидывания</h3>
+      <ol>
+        <li>Первым подкидывает <strong>Атакующий</strong>.</li>
+        <li>Далее — игрок <strong>слева от Защищающегося</strong>, и так далее по кругу.</li>
+        <li>Последним право подкинуть имеет игрок <strong>справа от Атакующего</strong>.</li>
+      </ol>
+
+      <h3>Правило «Пас»</h3>
+      <ul>
+        <li>Когда подходит ваша очередь, вы можете подкинуть <strong>любое количество карт</strong> подходящего номинала.</li>
+        <li>Если вы говорите <strong>«Пас»</strong> — вы полностью выходите из текущего раунда.</li>
+        <li>Даже если ситуация на столе изменилась, пасанувший игрок <strong>больше не может</strong> ничего добавить.</li>
+      </ul>
+    </section>
+
+    <!-- 5 -->
+    <section id="s5" class="card-section">
+      <h2><span class="section-num">5</span> Ограничение по количеству карт в атаке</h2>
+      <div class="formula-box">
+        <span class="formula">max карт в атаке = min(6, карт у защищающегося)</span>
+      </div>
+      <div class="callout info">
+        <strong>Пример:</strong> если у защищающегося 3 карты — нельзя подкинуть 4, даже если колода пуста.
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section id="s6" class="card-section">
+      <h2><span class="section-num">6</span> Защита и Перевод</h2>
+
+      <h3>Защита</h3>
+      <ul>
+        <li>Карта бьётся <strong>старшей картой той же масти</strong> или <strong>козырем</strong>.</li>
+        <li>Козырь бьётся только <strong>старшим козырем</strong>.</li>
+      </ul>
+
+      <h3>Перевод</h3>
+      <ul>
+        <li>Защищающийся может перевести атаку на следующего игрока, положив рядом <strong>карту того же номинала</strong>.</li>
+      </ul>
+
+      <h3>Козырный перевод <span class="badge">1 раз за игру</span></h3>
+      <ul>
+        <li>Игрок может <strong>показать</strong> козырь того же номинала (не выкладывая его на стол) и перевести ход.</li>
+        <li>⚠️ Это право можно использовать только <strong>1 раз за всю игру</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- 7 -->
+    <section id="s7" class="card-section">
+      <h2><span class="section-num">7</span> Фаза «В придачу»</h2>
+      <p class="hint">Если игрок не может или не хочет отбиваться, наступает фаза <strong>«Вдогонку»</strong>:</p>
+      <table>
+        <thead><tr><th>Кто подкидывает</th><th>Что можно подкинуть</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Игрок, чья сейчас очередь</td>
+            <td>Любые карты номиналов, которые уже лежат на столе</td>
+          </tr>
+          <tr>
+            <td>Все остальные (чья очередь не дошла)</td>
+            <td>Только карты <strong>того номинала, с которого началась атака</strong> в этом раунде</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 8 -->
+    <section id="s8" class="card-section">
+      <h2><span class="section-num">8</span> Завершение раунда и Добор карт</h2>
+
+      <h3>Исход раунда</h3>
+      <table>
+        <thead><tr><th>Исход</th><th>Результат</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Отбился</strong></td><td>Карты уходят в «отбой»; защищающийся становится атакующим</td></tr>
+          <tr><td><strong>Взял</strong></td><td>Забирает все карты; ход переходит к игроку <strong>слева от него</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Добор карт (до 6)</h3>
+      <ol>
+        <li>Первым берёт <strong>Атакующий</strong>.</li>
+        <li>Затем остальные <strong>по кругу</strong>.</li>
+        <li>Защищающийся берёт <strong>последним</strong>.</li>
+      </ol>
+    </section>
+
+    <!-- 9 -->
+    <section id="s9" class="card-section">
+      <h2><span class="section-num">9</span> Финал и Ничья</h2>
+      <ul>
+        <li>Игра заканчивается, когда <strong>колода пуста</strong>, а карты на руках остались только у <strong>одного игрока</strong>.</li>
+        <li><strong>Ничья:</strong> если после последнего хода карты закончились у всех одновременно.</li>
+      </ul>
+
+      <h3>Правило «Последняя рука»</h3>
+      <div class="callout warning">«Последняя рука хуже дурака» — при ничьей игрок, который ходил последним, <strong>обязан</strong> собрать карты со стола и перетасовать их для следующей партии.</div>
+    </section>
+
+    <!-- Summary -->
+    <section class="card-section summary-section">
+      <h2>📋 Сводная схема раунда</h2>
+      <div class="flow">
+        <div class="flow-step">1. Атака<br><small>≥1 карта</small></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">2. Возможный Перевод</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">3. Очередь подкидывания<br><small>по одному, до «Паса»</small></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step split">
+          <div>4a. Защита ✅</div>
+          <div class="or">или</div>
+          <div>4b. Взятие + «Вдогонку» ❌</div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">5. Добор карт из колоды</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>🃏 Дурак «Цивилизованный» · Финальная редакция правил</p>
+  </footer>
+
+  <button id="topBtn" title="Наверх">↑</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
